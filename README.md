@@ -14,6 +14,7 @@
 
 ### → Step #2
 
-* To start your virtual server under port 8000 run the following command:
+* To start your virtual server under port 8000 r
+un the following command:
   ```http-server . -p 8000```
 * Open your browser and go to http://localhost:8000/

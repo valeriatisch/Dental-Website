@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-ms-6 col-4 text-right" style="padding: 0">
                     <p>
-                        <a id="telnr" href="tel:+49 30 9350412"><i class="fas fa-phone-alt"></i><span class="vis">+49 30 9350412<span></a>
+                        <a id="telnr" href="tel:+49 30 9350412"><i class="fas fa-phone-alt"></i><span class="vis">+49 30 9350412</span></a>
                     </p>
                 </div>
             </div>
@@ -37,7 +37,7 @@
     </div>
 
 <!---NAV BAR--->
-    <nav class="navbar navbar-expand-lg navbar-custom" style="padding: 0">
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" style="padding: 0">
         <div class="container">
 
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -47,17 +47,35 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#kontakt" class="nav-link">Kontakt & Öffnungszeiten</a></li>
+                    <li class="nav-item"><a href="#patientsinfo" class="nav-link">Informationen für Patienten</a></li>
                     <li class="nav-item"><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Praxis</a></li>
                     <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
                     <li class="nav-item"><a href="karriere.html" class="nav-link">Karriere</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-<br>
+
+<!---OPENING--->
+
+    <div class="opening mx-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        <span id="welcome">Herzlich Willkommen bei der Zahnarztpraxis Shuravel!</span> <br>
+                        <span id="welcome-content">Wir freuen uns Sie kompetent behandeln und beraten zu dürfen! Bitte vereinbaren Sie vor Ihrem Besuch telefonisch einen Termin. Sie erreichen uns unter <a class="telnr" href="tel:+49 30 9350412"><span style="font-weight: bold; white-space: nowrap">+49 30 9350412</span></a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!---OPENING HOURS--->
-    <section class="open-hour-area" style="margin:0 auto">
+
+    <br>
+    <section class="open-hour-area mx-auto" style="margin: 0 0 2rem 0">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -65,45 +83,71 @@
                 <table class="table mx-auto" style="width:90%; margin: 0">
 
                     <tr>
-                        <td>Montag</td>
+                        <td><strong>Montag</strong></td>
                         <td class="maxw">08:00 - 13:00 <br>
                             14:00 - 19:00</td>
                     </tr>
                     <tr>
-                        <td>Dienstag</td>
+                        <td><strong>Dienstag</strong></td>
                         <td class="maxw">08:00 - 13:00 <br>
                             14:00 - 19:00</td>
                     </tr>
                     <tr>
-                        <td>Mittwoch</td>
+                        <td><strong>Mittwoch</strong></td>
                         <td class="maxw">nach Vereinbarung</td>
                     </tr>
                     <tr>
-                        <td>Donnerstag</td>
+                        <td><strong>Donnerstag</strong></td>
                         <td class="maxw">08:00 - 13:00 <br>
                             14:00 - 19:00</td>
                     </tr>
                     <tr>
-                        <td>Freitag</td>
+                        <td><strong>Freitag</strong></td>
                         <td class="maxw">08:00 - 12:00</td>
                     </tr>
                     <tr>
-                        <td>Samstag</td>
+                        <td><strong>Samstag</strong></td>
                         <td class="maxw">geschlossen</td>
                     </tr>
                     <tr>
-                        <td>Sonntag</td>
+                        <td><strong>Sonntag</strong></td>
                         <td class="maxw">geschlossen</td>
                     </tr>
 
                 </table>
-                <!--- TODO we're open/closed rn js -->
+                <!--- TODO we're open/closed rn js --->
+                <div id="timeDiv"></div>
             </div>
         </div>
     </div>
     </section>
 
+<!---LOCATION--->
 
+    <div class="location">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span id="location-content">
+                        Unsere Praxis finden Sie in der <strong>Basdorfer Straße 8 in Marzahn</strong>.
+                    </span>
+                    <div style="margin:1rem">
+                        <iframe id="maps-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.32422350488!2d13.546149316016093!3d52.54565994207938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84b925d692b13%3A0xf5556073325b6b9f!2sHerr%20Eduard%20Shuravel!5e0!3m2!1sde!2smt!4v1600204528019!5m2!1sde!2smt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---FOOTER--->
+
+<footer>
+
+</footer>
+
+<!---SCRIPTS--->
+
+    <script type="text/javascript" src="js/main.js"></script>
     <!---BOOTSTRAP 4 JQUERY 3.5 POPPER LOCAL --->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
