@@ -19,7 +19,7 @@
     <!---GOOGLE FONTS--->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 <!---TOP BAR--->
     <div class="top-bar">
         <div class="container">
@@ -47,9 +47,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#patientsinfo" class="nav-link">Informationen für Patienten</a></li>
+                    <li class="nav-item"><a href="patientsinfo.html" class="nav-link">Informationen für Patienten</a></li>
                     <li class="nav-item"><a href="leistungen.html" class="nav-link">Leistungen</a></li>
-                    <li class="nav-item"><a href="team.html" class="nav-link">Praxis</a></li>
+                    <li class="nav-item"><a href="praxis.html" class="nav-link">Praxis</a></li>
                     <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
                     <li class="nav-item"><a href="karriere.html" class="nav-link">Karriere</a></li>
                 </ul>
@@ -75,21 +75,20 @@
 <!---OPENING HOURS--->
 
     <br>
-    <section class="open-hour-area mx-auto" style="margin: 0 0 2rem 0">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 open-hour-area mx-auto" style="margin-bottom: 2rem; max-width: 500px;">
                 <h4 class="text-center openhours">Öffnungszeiten</h4>
-                <table class="table mx-auto" style="width:90%; margin: 0">
+                <table class="table mx-auto" style="margin: 0">
 
                     <tr>
                         <td><strong>Montag</strong></td>
-                        <td class="maxw">08:00 - 13:00 <br>
+                        <td class="maxw">08:00 - 13:00
                             14:00 - 19:00</td>
                     </tr>
                     <tr>
                         <td><strong>Dienstag</strong></td>
-                        <td class="maxw">08:00 - 13:00 <br>
+                        <td class="maxw">08:00 - 13:00
                             14:00 - 19:00</td>
                     </tr>
                     <tr>
@@ -98,7 +97,7 @@
                     </tr>
                     <tr>
                         <td><strong>Donnerstag</strong></td>
-                        <td class="maxw">08:00 - 13:00 <br>
+                        <td class="maxw">08:00 - 13:00
                             14:00 - 19:00</td>
                     </tr>
                     <tr>
@@ -120,7 +119,6 @@
             </div>
         </div>
     </div>
-    </section>
 
 <!---LOCATION--->
 
@@ -131,7 +129,7 @@
                     <span id="location-content">
                         Unsere Praxis finden Sie in der <strong>Basdorfer Straße 8 in Marzahn</strong>.
                     </span>
-                    <div style="margin:1rem">
+                    <div style="margin: 1rem auto">
                         <iframe id="maps-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.32422350488!2d13.546149316016093!3d52.54565994207938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84b925d692b13%3A0xf5556073325b6b9f!2sHerr%20Eduard%20Shuravel!5e0!3m2!1sde!2smt!4v1600204528019!5m2!1sde!2smt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
@@ -139,10 +137,42 @@
         </div>
     </div>
 
+<div style="margin: 3rem"></div>
+
 <!---FOOTER--->
+<footer class="mt-auto" id="footer" style="width: 100%">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-8" style="margin: 1rem 0">
+                <h5 style="color: white; margin-bottom: .5rem;"><strong>Kontakt</strong></h5>
+                <ul id="footer-address">
+                    <li><strong>Adresse:</strong></li>
+                    <li>Herr Eduard Shuravel</li>
+                    <li>Zahnarzt in Berlin</li>
+                    <li>Basdorfer Straße 8</li>
+                    <li>12679 Berlin</li>
+                    <br>
+                    <li><strong>Telefon:</strong> +49 30 9350412</li>
+                    <li><strong>E-Mail:</strong></li>
+                </ul>
+            </div>
 
-<footer>
+            <div class="col-lg-6 col-md-6 col-4" style="margin: 1rem 0">
+                <a href="impressumdatenschutz.html">Impressum und Datenschutz</a>
+            </div>
 
+        </div>
+    </div>
+</footer>
+
+<footer class="mt-auto" id="footer-bottom" style="width: 100%; margin-top:0 !important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 my-auto text-center">
+                Copyright &copy 2020 Alle Rechte vorbehalten | Webseite erstellt mit &#10084 von <a href="http://valeriatisch.codes/"><strong>Valeria Tisch</strong></a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!---SCRIPTS--->
