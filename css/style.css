@@ -210,6 +210,31 @@ a #telnr {
 
 /*============= OPENING HOURS =============*/
 
+.emergency-area {
+    background: #db3956;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-shadow: 0 0 29px -4px rgba(95, 99, 102, 0.62);
+    -moz-box-shadow: 0 0 29px -4px rgba(95, 99, 102, 0.62);
+    box-shadow: 0 0 29px rgba(95, 99, 102, 0.62);
+    padding: 1rem;
+}
+
+.attention-header {
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 600;
+}
+
+.attention-content {
+    max-width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
 .open-hour-area {
     background: white;
     border-radius: 15px;
@@ -217,6 +242,7 @@ a #telnr {
     -webkit-box-shadow: 0 0 29px -4px rgba(95, 99, 102, 0.62);
     -moz-box-shadow: 0 0 29px -4px rgba(95, 99, 102, 0.62);
     box-shadow: 0 0 29px rgba(95, 99, 102, 0.62);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .openhours {
@@ -227,7 +253,8 @@ a #telnr {
 }
 
 .table {
-    max-width: 300px;
+    max-width: 350px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .table tr td {
@@ -241,6 +268,10 @@ a #telnr {
 
 .maxw {
     max-width: 100px;
+}
+
+.highlightdate {
+    color: #31bcaa;
 }
 
 @media (max-width: 1000px) {
@@ -291,25 +322,95 @@ a #telnr {
     }
 }
 
+/*============= LEISTUNGEN =============*/
 
-/*============= CAROUSEL =============*/
+.description {
+    text-align: justify;
+    color: #333638;
+    font-family: 'Open Sans', sans-serif;
+}
+ul.leistungen-list {
+    padding-left: 0;
+}
+
+.leistungen-list {
+    max-width: 300px;
+}
+.leistungen-item {
+    padding: .5rem;
+    font-weight: 600;
+    color: white;
+    background-color: #78ccc0;
+    border: 1px solid white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*============= PRAXIS =============*/
+
+.praxis-photo {
+    max-width: 1000px;
+}
+
+.praxis-photo-des {
+    margin-top: 3rem;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    -webkit-box-shadow: 0 .4rem 1rem -4px rgba(95, 99, 102, 0.7);
+    -moz-box-shadow: 0 .4rem 1rem -4px rgba(95, 99, 102, 0.7);
+    box-shadow: 0 .4rem 1rem rgba(95, 99, 102, 0.7);
+    z-index: 1; /*to display on top of bg image*/
+}
+
+.praxis-photo-des:first-child {
+    margin-top: 1.5rem;
+}
 
 
+/*============= TEAM =============*/
 
-/*---Change Carousel Transition Speed --*/
+.team-photo {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    -webkit-box-shadow: 0 .4rem 1rem -4px rgba(95, 99, 102, 0.7);
+    -moz-box-shadow: 0 .4rem 1rem -4px rgba(95, 99, 102, 0.7);
+    box-shadow: 0 .4rem 1rem rgba(95, 99, 102, 0.7);
+    z-index: 1; /*to display on top of bg image*/
+}
 
+@media (min-width: 769px) {
+    .team-photo {
+    }
+}
 
-/*-- Carousel Content --*/
+/*============= INFORMATIONEN FUER PATIENTEN =============*/
 
+.patients-info-list {
+    list-style-type: none;
+    color: #333638;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 0;
+}
 
+.fa-check-square {
+    margin-right: .3rem;
+    color: #31bcaa;
+}
 
-/*===== FIXED BACKGROUND IMG =====*/
+/*============= KARRIERE =============*/
 
+.job-offers {
+    content: "\203A ";
+    padding-right: 8px;
+}
 
+.job-offers li {
+    list-style-type: none;
+}
 
-/*-- Emoji Navbar --*/
-
-
+.job-offers-arrow {
+    color: #333638;
+    font-size: 1.2rem;
+}
 
 /*============= FOOTER =============*/
 
@@ -317,6 +418,7 @@ a #telnr {
     background-color: #4D6D9A;
     color: white;
     height: 250px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #footer-address {
@@ -328,6 +430,7 @@ a #telnr {
     background-color: #5F6366;
     color: white;
     height: 50px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #footer-bottom a, #footer a {
@@ -337,6 +440,11 @@ a #telnr {
 #footer-bottom a:hover, #footer a:hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+}
+
+#heart {
+    color: #fcd971;
+    font-size: 20px;
 }
 
 @media (max-width: 780px) {
@@ -361,23 +469,6 @@ a #telnr {
         height: 320px;
     }
 
-}
-
-/*============= LEISTUNGEN =============*/
-
-.description {
-    text-align: justify;
-}
-
-/*============= PRAXIS =============*/
-
-.praxis-photo {
-    max-width: 1000px;
-    margin-top: 2.5rem;
-    -webkit-box-shadow: 0 .4rem 1rem -4px rgba(95, 99, 102, 0.7);
-    -moz-box-shadow: 0 .4rem 1rem -4px rgba(95, 99, 102, 0.7);
-    box-shadow: 0 .4rem 1rem rgba(95, 99, 102, 0.7);
-    z-index: 1; /*to display on top of bg image*/
 }
 
 /*============= MEDIA QUERIES =============*/
