@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-bar {
     background: #86B3D1;
-    height: 2.8rem; /* 1rem = 16px */
+    height: 3rem; /* 1rem = 16px */
 }
 
 .logo {
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-bar p {
     padding: 0;
-    margin-top: 0.67rem;
+    margin-top: 0.75rem;
 }
 
 .top-bar #telnr {
@@ -345,10 +345,14 @@ ul.leistungen-list {
     font-family: 'Open Sans', sans-serif;
 }
 
+.leistungen-item:active {
+    text-decoration: none;
+}
+
 /*============= PRAXIS =============*/
 
-.praxis-photo {
-    max-width: 1000px;
+.photos {
+    max-width: 900px;
 }
 
 .praxis-photo-des {

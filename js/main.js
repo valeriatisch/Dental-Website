@@ -1,27 +1,23 @@
 $(function() {
     $(document).ready(function () {
 
-        const weekday = $('.weekday').val();
-        let weekday_nr = 0;
+        let weekday = new Date().getDay()
 
-        if (weekday === 'Montag') {
-            weekday_nr = 0;
-        } else if (weekday === 'Dienstag') {
-            weekday_nr = 1;
-        } else if (weekday === 'Mittwoch') {
-            weekday_nr = 2;
-        } else if (weekday === 'Donnerstag') {
-            weekday_nr = 3;
-        } else if (weekday === 'Freitag') {
-            weekday_nr = 4;
-        } else if (weekday === 'Samstag') {
-            weekday_nr = 5;
-        } else if (weekday === 'Sonntag') {
-            weekday_nr = 6;
+        if(weekday === 0) {
+            $('.sun').css('color', '#31bcaa')
+        } else if(weekday === 1) {
+            $('.mon').css('color', '#31bcaa')
+        } else if (weekday === 2) {
+            $('.tue').css('color', '#31bcaa')
+        } else if (weekday === 3) {
+            $('.wen').css('color', '#db3956')
+        } else if (weekday === 4) {
+            $('.thu').css('color', '#31bcaa')
+        } else if (weekday === 5) {
+            $('.fri').css('color', '#db3956')
+        } else if (weekday === 6) {
+            $('.sat').css('color', '#db3956')
         }
 
-        if (new Date().getDate() === weekday_nr) {
-            $('weekday').addClass('highlightdate');
-        }
     });
 });
