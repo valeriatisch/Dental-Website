@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 3rem; /* 1rem = 16px */
 }
 
-.logo {
+.top-bar .logo {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
@@ -57,8 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-bar #telnr {
-    background: white;
-    color: #86B3D1;
+    background: linear-gradient(#4D6D9A, #78ccc0);
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 30px;
     font-weight: bold;
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #telnr:hover {
     text-decoration: none; /* removes underline bc mobile*/
-    color: #4D6D9A;
+    color: #365684;
     transition: 0.2s;
 }
 
@@ -82,33 +82,33 @@ a #telnr {
 
 @media (max-width: 1200px) {
 
-    .logo img {
+    .top-bar .logo img {
         height: 2rem;
         margin-top: 0.4rem;
     }
 
-    .logo {
+    .top-bar .logo {
         font-size: 1.2rem;
     }
 
 }
 
 @media (max-width: 770px) {
-    .vis {
+    .top-bar .vis {
         display: none;
     }
 
-    .fa-phone-alt {
+    .top-bar .fa-phone-alt {
         margin-right: 0;
     }
 
-    .logo {
+    .top-bar .logo {
         font-size: 0.9rem;
     }
 }
 
 @media (max-width: 350px) {
-    .logo {
+    .top-bar .logo {
         font-size: 0.75rem;
     }
 }
@@ -239,6 +239,7 @@ a #telnr {
     background: white;
     border-radius: 15px;
     font-size: 1.1rem;
+    margin-top: 1rem;
     -webkit-box-shadow: 0 0 29px -4px rgba(95, 99, 102, 0.62);
     -moz-box-shadow: 0 0 29px -4px rgba(95, 99, 102, 0.62);
     box-shadow: 0 0 29px rgba(95, 99, 102, 0.62);
@@ -299,54 +300,62 @@ a #telnr {
     -webkit-box-shadow: 0 0 20px -4px rgba(95, 99, 102, 0.62);
     -moz-box-shadow: 0 0 20px -4px rgba(95, 99, 102, 0.62);
     box-shadow: 0 0 20px rgba(95, 99, 102, 0.62);
-}
-
-@media (max-width: 800px) {
-    #maps-location {
-        width: 450px;
-        height: 450px;
-    }
-}
-
-@media (max-width: 520px) {
-    #maps-location {
-        width: 300px;
-        height: 350px;
-    }
-}
-
-@media (max-width: 400px) {
-    #maps-location {
-        width: 250px;
-        height: 300px;
-    }
+    max-width: 700px;
 }
 
 /*============= LEISTUNGEN =============*/
+
+/*accordion*/
+
+#accordion {
+    max-width: 1000px;
+    height: 672px;
+}
+
+.fa-angle-down {
+    float: right;
+}
+
+.rotate-icon {
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.rotate-icon.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+.panel-heading {
+    background: linear-gradient(to right, #78ccc0, #86B3D1);
+    padding: 1rem;
+    margin: .5rem 0;
+    border-radius: 5px;
+}
+
+.panel-title {
+    color: white;
+    font-weight: 600;
+}
 
 .description {
     text-align: justify;
     color: #333638;
     font-family: 'Open Sans', sans-serif;
-}
-ul.leistungen-list {
-    padding-left: 0;
+    font-size: 18px;
 }
 
-.leistungen-list {
-    max-width: 300px;
-}
-.leistungen-item {
-    padding: .5rem;
-    font-weight: 600;
-    color: white;
-    background-color: #78ccc0;
-    border: 1px solid white;
-    font-family: 'Open Sans', sans-serif;
-}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
 
-.leistungen-item:active {
-    text-decoration: none;
+    to {
+        opacity: 1;
+        transform: skew(0deg);
+    }
 }
 
 /*============= PRAXIS =============*/
@@ -393,6 +402,7 @@ ul.leistungen-list {
     color: #333638;
     font-family: 'Open Sans', sans-serif;
     padding-left: 0;
+    font-size: 18px;
 }
 
 .fa-check-square {

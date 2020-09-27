@@ -1,10 +1,11 @@
-$(function() {
+$(function(){
     $(document).ready(function () {
 
+        //OPENING HOURS
         let weekday = new Date().getDay()
 
         if(weekday === 0) {
-            $('.sun').css('color', '#31bcaa')
+            $('.sun').css('color', '#db3956')
         } else if(weekday === 1) {
             $('.mon').css('color', '#31bcaa')
         } else if (weekday === 2) {
