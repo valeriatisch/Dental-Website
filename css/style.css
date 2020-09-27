@@ -358,6 +358,18 @@ a #telnr {
     }
 }
 
+@media (max-width: 770px) {
+    .panel-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 530px) {
+    .panel-title {
+        font-size: 18px;
+    }
+}
+
 /*============= PRAXIS =============*/
 
 .photos {
